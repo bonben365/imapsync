@@ -147,18 +147,8 @@ then
   sudo sed -i "s|YOUR_CLIENT_ID|$client_idx|g" /home/imapsync/mutt_oauth2.py
   sudo sed -i "s|YOUR_CLIENT_SECRET|$client_secretx|g" /home/imapsync/mutt_oauth2.py
 
-
 fi
 
-if [ $version == "Fedora" ]
-then
-
-fi
-
-if [ $version == "Red" ]
-then
-
-fi
 
 
 
