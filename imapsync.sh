@@ -35,7 +35,7 @@ then
   sudo cp ./imapsync /usr/bin/imapsync
   
   cd /home/imapsync
-  wget https://raw.githubusercontent.com/bonben365/linux/main/mutt_oauth2.py
+  wget https://raw.githubusercontent.com/bonben365/imapsync/main/mutt_oauth2.py
   sudo sed -i 's:DECRYPTION_PIPE = \['\''gpg'\'', '\''--decrypt'\''\]:DECRYPTION_PIPE = \['\''tee'\''\]:g' /home/imapsync/mutt_oauth2.py
   sudo sed -i 's:ENCRYPTION_PIPE = \['\''gpg'\'', '\''--encrypt'\'', '\''--recipient'\'', '\''YOUR_GPG_IDENTITY'\''\]:ENCRYPTION_PIPE = \['\''tee'\''\]:g' /home/imapsync/mutt_oauth2.py
   sudo sed -i 's:https\:\/\/login.microsoftonline.com\/common\/oauth2\/nativeclient:http\:\/\/localhost\/:g' /home/imapsync/mutt_oauth2.py
@@ -73,7 +73,7 @@ then
   sudo cp ./imapsync /usr/bin/imapsync
   
   cd /home/imapsync
-  wget https://raw.githubusercontent.com/bonben365/linux/main/mutt_oauth2.py
+  wget https://raw.githubusercontent.com/bonben365/imapsync/main/mutt_oauth2.py
   sudo sed -i 's:DECRYPTION_PIPE = \['\''gpg'\'', '\''--decrypt'\''\]:DECRYPTION_PIPE = \['\''tee'\''\]:g' /home/imapsync/mutt_oauth2.py
   sudo sed -i 's:ENCRYPTION_PIPE = \['\''gpg'\'', '\''--encrypt'\'', '\''--recipient'\'', '\''YOUR_GPG_IDENTITY'\''\]:ENCRYPTION_PIPE = \['\''tee'\''\]:g' /home/imapsync/mutt_oauth2.py
   sudo sed -i 's:https\:\/\/login.microsoftonline.com\/common\/oauth2\/nativeclient:http\:\/\/localhost\/:g' /home/imapsync/mutt_oauth2.py
@@ -139,7 +139,7 @@ then
   pip3 install --upgrade pip
 
   cd /home/imapsync
-  wget https://raw.githubusercontent.com/bonben365/linux/main/mutt_oauth2.py
+  wget https://raw.githubusercontent.com/bonben365/imapsync/main/mutt_oauth2.py
   sudo sed -i 's:DECRYPTION_PIPE = \['\''gpg'\'', '\''--decrypt'\''\]:DECRYPTION_PIPE = \['\''tee'\''\]:g' /home/imapsync/mutt_oauth2.py
   sudo sed -i 's:ENCRYPTION_PIPE = \['\''gpg'\'', '\''--encrypt'\'', '\''--recipient'\'', '\''YOUR_GPG_IDENTITY'\''\]:ENCRYPTION_PIPE = \['\''tee'\''\]:g' /home/imapsync/mutt_oauth2.py
   sudo sed -i 's:https\:\/\/login.microsoftonline.com\/common\/oauth2\/nativeclient:http\:\/\/localhost\/:g' /home/imapsync/mutt_oauth2.py
