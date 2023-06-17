@@ -82,7 +82,7 @@ then
   sudo sed -i "s|YOUR_CLIENT_SECRET|$client_secretx|g" /home/imapsync/mutt_oauth2.py
 fi
 
-if [ $version == "Ubuntu" ]
+if [ $version == "Ubuntu" ] || [ $version == "Debian" ] 
 then
   sudo apt-get install  \
     libauthen-ntlm-perl     \
@@ -148,7 +148,6 @@ then
   sudo sed -i "s|YOUR_CLIENT_SECRET|$client_secretx|g" /home/imapsync/mutt_oauth2.py
 
 fi
-
 
 
 
